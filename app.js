@@ -11,6 +11,8 @@ const options = {
 const url = process.env.APP_URL || 'https://guarded-beach-75462.herokuapp.com:443';
 const bot = new TelegramBot(TOKEN, options);
 
+bot.setWebHook(`${url}/bot${TOKEN}`);
+
 // Hello
 
 function randHello() {

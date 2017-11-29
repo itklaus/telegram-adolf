@@ -8,7 +8,7 @@ const options = {
   }
 };
 
-const url = process.env.APP_URL || 'https://<app-name>.herokuapp.com:443';
+const url = process.env.APP_URL || 'https://guarded-beach-75462.herokuapp.com:443';
 const bot = new TelegramBot(TOKEN, options);
 
 // Hello

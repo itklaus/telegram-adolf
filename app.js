@@ -1,7 +1,15 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = '381944664:AAEXKM5U8vo82DMehfI8gX17wHnukmIhuCY';
-const bot = new TelegramBot(token, {polling: true});
 
+const TOKEN = process.env.TELEGRAM_TOKEN || '381944664:AAEXKM5U8vo82DMehfI8gX17wHnukmIhuCY';
+
+const options = {
+  webHook: {
+    port: process.env.PORT
+  }
+};
+
+const url = process.env.APP_URL || 'https://<app-name>.herokuapp.com:443';
+const bot = new TelegramBot(TOKEN, options);
 
 // Hello
 

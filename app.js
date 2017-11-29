@@ -5,6 +5,7 @@ const TOKEN = process.env.TELEGRAM_TOKEN || '381944664:AAEXKM5U8vo82DMehfI8gX17w
 const options = {
   webHook: {
     port: process.env.PORT || 8080
+  } 
 };
 
 const url = process.env.APP_URL || 'https://guarded-beach-75462.herokuapp.com:443';
